@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Red Team Replay</title>
+  <meta name="description" content="Replayable incident traces for AI agent failures.">
+  <style>
+    :root { color-scheme: light; --ink: #172026; --muted: #52616b; --line: #d8dee4; --accent: #0f766e; --paper: #fbfcfd; --band: #eef6f4; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); background: var(--paper); line-height: 1.55; }
+    header { min-height: 82vh; display: grid; align-items: center; background: linear-gradient(120deg, rgba(15,118,110,.15), rgba(37,99,235,.10)), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='800'%3E%3Crect width='1200' height='800' fill='%23f8fafc'/%3E%3Cg stroke='%230f766e' stroke-opacity='.18' fill='none'%3E%3Cpath d='M80 620 C280 500 350 700 540 560 S820 420 1040 520' stroke-width='4'/%3E%3Cpath d='M160 180 H1040 M160 260 H860 M160 340 H960' stroke-width='3'/%3E%3Ccircle cx='935' cy='230' r='92' stroke-width='5'/%3E%3Cpath d='M900 230 l28 28 l56 -72' stroke-width='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E") center/cover; }
+    .wrap { width: min(1080px, calc(100% - 32px)); margin: 0 auto; }
+    .hero { max-width: 760px; padding: 64px 0 96px; }
+    .eyebrow { color: var(--accent); font-weight: 800; text-transform: uppercase; letter-spacing: 0; font-size: 0.82rem; }
+    h1 { font-size: clamp(2.4rem, 7vw, 5.8rem); line-height: .95; margin: 16px 0; letter-spacing: 0; }
+    .lead { font-size: clamp(1.1rem, 2.4vw, 1.45rem); color: #26323a; max-width: 680px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    a.button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 18px; border-radius: 6px; color: white; background: var(--accent); text-decoration: none; font-weight: 760; }
+    a.secondary { color: var(--ink); background: white; border: 1px solid var(--line); }
+    section { padding: 58px 0; }
+    .band { background: var(--band); border-block: 1px solid var(--line); }
+    h2 { font-size: clamp(1.55rem, 3vw, 2.4rem); margin: 0 0 16px; letter-spacing: 0; }
+    p { margin: 0 0 16px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin-top: 24px; }
+    .card { background: white; border: 1px solid var(--line); border-radius: 8px; padding: 18px; }
+    .card h3 { margin: 0 0 8px; font-size: 1rem; }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    pre { overflow: auto; background: #111827; color: #e5e7eb; padding: 18px; border-radius: 8px; }
+    footer { padding: 28px 0; color: var(--muted); border-top: 1px solid var(--line); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap hero">
+      <div class="eyebrow">Open-source AI infrastructure</div>
+      <h1>Red Team Replay</h1>
+      <p class="lead">Replayable incident traces for AI agent failures.</p>
+      <div class="actions">
+        <a class="button" href="https://github.com/YOUR_GITHUB_USERNAME/red-team-replay">Contribute on GitHub</a>
+        <a class="button secondary" href="#quickstart">Run v1 locally</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="wrap">
+        <h2>The Problem</h2>
+        <p>AI incidents are hard to reproduce because prompts, tool calls, hidden context, retrieval, and approvals are scattered across logs.</p>
+        <h2>What v1 Ships</h2>
+        <p>A normalized replay bundle validator for prompts, context, tool calls, decisions, outcomes, and mitigation notes.</p>
+      </div>
+    </section>
+    <section class="band" id="quickstart">
+      <div class="wrap">
+        <h2>Quick Start</h2>
+        <pre><code>npm test
+npm start -- sample</code></pre>
+      </div>
+    </section>
+    <section>
+      <div class="wrap">
+        <h2>Contribution Tracks</h2>
+        <div class="grid">
+          <div class="card"><h3>OpenTelemetry mapping</h3><p>Help turn this v1 foundation into durable public infrastructure.</p></div>
+          <div class="card"><h3>LangSmith imports</h3><p>Help turn this v1 foundation into durable public infrastructure.</p></div>
+          <div class="card"><h3>privacy scrubbing</h3><p>Help turn this v1 foundation into durable public infrastructure.</p></div>
+          <div class="card"><h3>replay runners</h3><p>Help turn this v1 foundation into durable public infrastructure.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">MIT licensed. Built for transparent, human-centered AI systems.</div>
+  </footer>
+</body>
+</html>
