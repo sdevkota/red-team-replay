@@ -21,10 +21,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_GITHUB_USERNAME/red-team-replay.git"
+    "url": "https://github.com/sdevkota/red-team-replay.git"
   },
   "bugs": {
-    "url": "https://github.com/YOUR_GITHUB_USERNAME/red-team-replay/issues"
+    "url": "https://github.com/sdevkota/red-team-replay/issues"
   },
-  "homepage": "https://YOUR_GITHUB_USERNAME.github.io/red-team-replay/"
+  "homepage": "https://sdevkota.github.io/red-team-replay/"
 }
