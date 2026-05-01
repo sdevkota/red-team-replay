@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "red-team-replay"
+version = "2.0.0"
+description = "Replayable incident traces for AI agent failures."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Red Team Replay contributors" }]
+keywords = ["ai", "agents", "governance", "safety", "open-source"]
+
+[project.scripts]
+"red-team-replay" = "red_team_replay.cli:main"
+
+[project.urls]
+Homepage = "https://sdevkota.github.io/red-team-replay/"
+Repository = "https://github.com/sdevkota/red-team-replay"
+Issues = "https://github.com/sdevkota/red-team-replay/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
